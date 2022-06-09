@@ -2,7 +2,7 @@ radio.onReceivedString(function (receivedString) {
     if (receivedString == "Left") {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
-        0,
+        -255,
         SuperBit.enMotors.M3,
         255
         )
@@ -11,7 +11,7 @@ radio.onReceivedString(function (receivedString) {
         SuperBit.enMotors.M1,
         255,
         SuperBit.enMotors.M3,
-        0
+        -255
         )
     } else if (receivedString == "Forward") {
         SuperBit.MotorRunDual(
@@ -23,9 +23,9 @@ radio.onReceivedString(function (receivedString) {
     } else if (receivedString == "Backward") {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
-        -100,
+        -255,
         SuperBit.enMotors.M3,
-        -100
+        -255
         )
     } else {
         SuperBit.MotorStopAll()
