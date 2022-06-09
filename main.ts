@@ -1,12 +1,12 @@
 radio.onReceivedString(function (receivedString) {
-    if (receivedString == "Left") {
+    if (receivedString == "Right") {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
         SuperBit.enMotors.M3,
         255
         )
-    } else if (receivedString == "Right") {
+    } else if (receivedString == "Left") {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         255,
